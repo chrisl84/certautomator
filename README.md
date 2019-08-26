@@ -1,7 +1,7 @@
 # CertAutomator
 ---
 ## Description
-A script that automates the generation of self-signed CA's and users keys, certificate requests and signed certificates.
+A script that automates the generation of self-signed CA's and users keys, certificate requests and signed certificates for test environments.
 
 ## Setup
 
