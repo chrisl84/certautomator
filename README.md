@@ -24,6 +24,7 @@ The script gathers and parses the information in the config file, then generates
 --log : Location of the log file, defaults to ./openssltoolslib.log.
 
 --openssl : Location of the openssl binaries, defaults to /usr/bin/openssl.
+(WARNING: This will overwrite all files and directories without prompting. Please use with caution)
 
 --overwrite : Will overwrite keys, requests or certificates if they already exists.
 
