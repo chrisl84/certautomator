@@ -9,7 +9,7 @@ A script that automates the generation of self-signed CA's and users keys, certi
 * Generate a configuration [configuration file](https://github.com/chrisl84/certautomator/blob/master/config_file_description) as outlined in the link.
 * Run the python script using the parameters as described below.
 
-The script gathers and parses the information in the config file, then generates directory structures for the keys and certificates. After the information has been processed, the script uses the openssl library to generate keys and certificates the CA (if one is specified) and then keys and certificates for any additional users. Signing is done using the aforementioned CA. Though more than one CA can be specified for each group, the script will only use the last CA to sign the certificate requests from the users.
+The script gathers and parses the information in the config file, then generates directory structures for the keys and certificates. After the information has been processed, the script uses the openssl library to generate keys and certificates the CA (if one is specified) and then keys and certificates for any additional users. Signing is done using the aforementioned CA. Though more than one CA can be specified for each group, the script will only use the last CA to sign the certificate requests from the users. See [TODO](#todo) for information on work in progress. 
 
 ## Script parameters
 
@@ -49,8 +49,7 @@ The script gathers and parses the information in the config file, then generates
 ## GPLv3 License
 * [GPLv3](http://www.gnu.org/licenses/).
 
-<a name="todo">
-## TODO:
-</a>
+
+## <a name="todo"></a>TODO:
 Add flag to specify which CA you would like to sign the certificates
 Add flag to specify which users should be overwritten
