@@ -27,9 +27,9 @@ Though more than one CA can be specified for each group, the script will only us
 --log : Location of the log file, defaults to ./openssltoolslib.log.
 
 --openssl : Location of the openssl binaries, defaults to /usr/bin/openssl.
-**(WARNING: This will overwrite all files and directories without prompting. Use with caution)**
 
 --overwrite : Will overwrite keys, requests or certificates if they already exists.
+**(WARNING: This will overwrite all files and directories without prompting. Use with caution)**
 
 --all / -a : Generates keys, requests and certificates (if CA is specified).
 
