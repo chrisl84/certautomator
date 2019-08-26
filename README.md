@@ -49,6 +49,8 @@ The script gathers and parses the information in the config file, then generates
 ## GPLv3 License
 * [GPLv3](http://www.gnu.org/licenses/).
 
+<a name="todo">
 ## TODO:
+</a>
 Add flag to specify which CA you would like to sign the certificates
 Add flag to specify which users should be overwritten
