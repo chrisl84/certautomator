@@ -1,0 +1,70 @@
+Config json file :
+Note that any values set at the group level, in the ssl_defaults and name_defaults will
+be applied to each user and ca unless overwritten at the user level. This also goes for
+passwords, if enabled.
+
+{
+    <group_name> : {
+        <ssl_defaults> : {
+            "bits": <positive number optional default 2048>,
+            "days": <positive number optional default 365>,
+            "protected": <true|false optional, default false>,
+            "password":<password string, required if protected is true>,
+            "password_file":<location of password file, required if protected is true>,
+            "message_digest": <optional default sha256>,
+            "user_dir" : <directory mandatory>,
+            "ca_dir": <directory mandatory>
+        },
+        <name_defaults> : {
+            "country": <string mandatory>,
+            "state": <string mandatory>,
+            "locality": <string mandatory>,
+            "organization_name": <string mandatory>,
+            "organizational_unit_name": <string mandatory>,
+            "email": <string mandatory>
+        },
+        <ca> : {
+            <ca_name> : {
+                "common_name": <string mandatory>,
+                "key_name": <filename string mandatory>,
+                "cert_name":<filename string mandatory>,
+                "cert_request_name": <filename string mandatory>
+                "country": <string optional overrides name_defaults>,
+                "state": <string optional overrides name_defaults>,
+                "locality": <string optional overrides name_defaults>,
+                "organization_name": <string optional overrides name_defaults>,
+                "organizational_unit_name": <string optional overrides name_defaults>,
+                "email": <string optional overrides name_defaults>,
+                "ca_conf":<location with filename, optional>,
+                "ca_dir": <directory optional overrides ssl_defaults>
+                "protected": <true|false optional, default false>,
+                "password":<password string, required if protected is true>,
+                "password_file":<location of password file, required if protected is true>,
+            }
+        },
+        <users> : {
+            <user_name> : {
+                "common_name": <string mandatory>,
+                "key_name": <filename string mandatory>,
+                "cert_name":<filename string mandatory>,
+                "cert_request_name": <filename string mandatory>
+                "country": <string optional overrides name_defaults>,
+                "state": <string optional overrides name_defaults>,
+                "locality": <string optional overrides name_defaults>,
+                "organization_name": <string optional overrides name_defaults>,
+                "organizational_unit_name": <string optional overrides name_defaults>,
+                "email": <string optional overrides name_defaults>
+                "user_dir":<string optional overrides ssl_defaults user_dir>
+                "protected": <true|false optional, default false>,
+                "password":<password string, required if protected is true>,
+                "password_file":<location of password file, required if protected is true>,
+            }...,
+            <user_name n> : {
+                ...
+            }
+        }
+    },
+    <group name n> : {
+        ...
+    }
+}
