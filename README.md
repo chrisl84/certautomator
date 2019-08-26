@@ -52,5 +52,5 @@ The script gathers and parses the information in the config file, then generates
 
 
 ## <a name="todo"></a>TODO:
-* Add flag to specify which CA you would like to sign the certificates
-* Add flag to specify which users should be overwritten
+* Add flag to specify which CA you would like to sign the certificates.
+* Add flag to specify which users should be overwritten.
