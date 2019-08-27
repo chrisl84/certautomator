@@ -29,7 +29,7 @@ Though more than one CA can be specified for each group, the script will only us
 --openssl : Location of the openssl binaries, defaults to /usr/bin/openssl.
 
 --overwrite : Will overwrite keys, requests or certificates if they already exists.
-<span style="color:red"> **(WARNING: This will overwrite all files and directories without prompting. Use with caution)**</span>
+-! **(WARNING: This will overwrite all files and directories without prompting. Use with caution)** !-
 
 --all / -a : Generates keys, requests and certificates (if CA is specified).
 
